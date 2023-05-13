@@ -1,4 +1,22 @@
 <div class="container-fluid px-0">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" placeholder="Starting Point">
+            </div>
+            <div class="col-md-6 mt-3">
+                <input type="text" placeholder="Destination">
+            </div>
+            <div class="col-md-6">
+                <div class="amount">
+                    <input type="number" value="3000" disabled>
+                </div>
+            </div>
+            <div class="col-md-6 pt-3">
+                <button class="btn c_btn" (click)="payWithRazorpay()">Book Truck</button>
+            </div>
+        </div>
+    </div>
     <div class="banner design">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">

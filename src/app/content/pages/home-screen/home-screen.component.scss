@@ -62,3 +62,19 @@
         text-align: center;
     }
 }
+.wrapper{
+    height: 200px;
+    padding-top: 24px;
+    .row{
+        text-align: center;
+        .amount{
+            input{
+                font-size: 26px;
+                font-weight: 700;
+                border: none;
+                text-align: center;
+            }
+           
+        }
+    }
+}
