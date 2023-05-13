@@ -1,0 +1,40 @@
+<header>
+    <div class="container-fluid px-0">
+        <div class="row mx-0">
+            <div class="col-md-3 col-lg-3 col-sm-3 col-3 px-0">
+                <a [routerLink]="['/pages/home']">
+                    <img src="./assets/logo.png" height="75px" width="200px" alt="">
+                </a>
+            </div>
+            <div class="col-md-9 col-sm-9 col-lg-9 col-9 px-0">
+                <div class="menu_icon" (click)="openMenu()">
+                    <span *ngIf="!menuVariable">
+                        <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+                    </span>
+                    <span *ngIf="menuVariable">
+                        <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+                    </span>
+                </div>
+                <div class="menu" [class.menuClass]="menuVariable">
+                    <ul>
+                        <li>
+                            <a [routerLink]="['/pages/home']" routerLinkActive="active">Home</a>
+                            </li>
+                        <li>
+                            <a [routerLink]="['/pages/about-us']" routerLinkActive="active">About Us</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/pages/services']" routerLinkActive="active">Services</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/pages/blogs']" routerLinkActive="active">Blogs</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/pages/contact-us']" routerLinkActive="active">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
